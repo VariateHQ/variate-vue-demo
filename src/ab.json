@@ -1,0 +1,129 @@
+{
+    "components": {
+        "Hero": {
+            "id": 0,
+            "variations":[
+                {
+                    "id": 0,
+                    "control": true,
+                    "traffic_allocation": {
+                        "min": 0,
+                        "max": 50
+                    },
+                    "attributes": {
+                        "heroImageSrc": "https://images.unsplash.com/photo-1513147122760-ad1d5bf68cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2800&q=80",
+                        "heroImageHeight": "500px",
+                        "heroButtonColor": "red"
+                    }
+                },
+                {
+                    "id": 1,
+                    "control": false,
+                    "traffic_allocation": {
+                        "min": 51,
+                        "max": 100
+                    },
+                    "attributes": {
+                        "heroImageSrc": "https://images.unsplash.com/photo-1546193361-d4596bc137ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+                        "heroImageHeight": "600px",
+                        "heroButtonColor": "blue"
+                    }
+                }
+            ]
+        },
+        "HeroPrimaryCTA": {
+            "id": 2,
+            "variations":[
+                {
+                    "id": 0,
+                    "control": true,
+                    "traffic_allocation": {
+                        "min": 0,
+                        "max": 50
+                    },
+                    "attributes": {
+                        "color": "red",
+                        "width": "150px",
+                        "borderColor": "red",
+                        "backgroundColor": "red"
+                    }
+                },
+                {
+                    "id": 1,
+                    "control": false,
+                    "traffic_allocation": {
+                        "min": 51,
+                        "max": 100
+                    },
+                    "attributes": {
+                        "color": "white",
+                        "width": "200px",
+                        "borderColor": "green",
+                        "backgroundColor": "green"
+                    }
+                },
+                {
+                    "id": 1,
+                    "control": false,
+                    "traffic_allocation": {
+                        "min": 51,
+                        "max": 100
+                    },
+                    "attributes": {
+                        "color": "white",
+                        "width": "200px",
+                        "borderColor": "blue",
+                        "backgroundColor": "blue"
+                    }
+                }
+            ]
+        },
+        "HeroSecondaryCTA": {
+            "id": 3,
+            "variations":[
+                {
+                    "id": 0,
+                    "control": true,
+                    "traffic_allocation": {
+                        "min": 0,
+                        "max": 50
+                    },
+                    "attributes": {
+                        "color": "red",
+                        "width": "150px",
+                        "borderColor": "palevioletred",
+                        "backgroundColor": "palevioletred"
+                    }
+                },
+                {
+                    "id": 1,
+                    "control": false,
+                    "traffic_allocation": {
+                        "min": 51,
+                        "max": 100
+                    },
+                    "attributes": {
+                        "color": "white",
+                        "width": "200px",
+                        "borderColor": "lightgreen",
+                        "backgroundColor": "lightgreen"
+                    }
+                },
+                {
+                    "id": 1,
+                    "control": false,
+                    "traffic_allocation": {
+                        "min": 51,
+                        "max": 100
+                    },
+                    "attributes": {
+                        "color": "white",
+                        "width": "200px",
+                        "borderColor": "lightblue",
+                        "backgroundColor": "lightblue"
+                    }
+                }
+            ]
+        }
+    }
+}
