@@ -1,6 +1,6 @@
 <template>
     <div class="button">
-        <button class="btn" :style="style">
+        <button class="btn" :style="style" v-if="visible">
             {{ label }}
         </button>
     </div>
@@ -15,6 +15,13 @@ export default {
         },
     },
     computed: {
+        visible() {
+            if(typeof this.attributes.visible !== 'undefined') {
+                return this.attributes.visible;
+            }
+
+            return true;
+        },
         style() {
             let style = '';
 

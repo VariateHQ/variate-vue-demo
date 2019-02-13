@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <Hero></Hero>
+        <pre>{{ config }}</pre>
+        <!--<Hero></Hero>-->
     </div>
 </template>
 
@@ -9,6 +10,14 @@ import Hero from '@/components/Hero';
 
 export default {
     components: { Hero },
+    computed: {
+        config() {
+            return this.$ab;
+        }
+    },
+    mounted() {
+
+    }
 };
 </script>
 
@@ -20,5 +29,11 @@ export default {
         text-align: center;
         color: #2c3e50;
         margin-top: 60px;
+    }
+
+    pre {
+        text-align: left;
+        background-color: #EFEFEF;
+        border: 1px solid #999999;
     }
 </style>
