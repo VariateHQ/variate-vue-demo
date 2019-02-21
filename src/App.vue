@@ -1,25 +1,12 @@
 <template>
-    <div id="app">
-        <pre>{{ config }}</pre>
-        <!--<Hero></Hero>-->
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
     </div>
+    <router-view/>
+  </div>
 </template>
-
-<script>
-import Hero from '@/components/Hero';
-
-export default {
-    components: { Hero },
-    computed: {
-        config() {
-            return this.$ab;
-        }
-    },
-    mounted() {
-
-    }
-};
-</script>
 
 <style>
     #app {

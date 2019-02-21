@@ -3,6 +3,7 @@ import App from './App.vue';
 import { VueABTest } from 'testing-tool';
 
 import ab from './ab.json';
+import router from './router'
 
 Vue.config.productionTip = false;
 
@@ -12,5 +13,6 @@ Vue.use(VueABTest, {
 });
 
 new Vue({
-    render: h => h(App),
+    router,
+    render: h => h(App)
 }).$mount('#app');

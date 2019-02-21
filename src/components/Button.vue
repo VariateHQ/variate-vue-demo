@@ -1,6 +1,6 @@
 <template>
     <div class="button">
-        <button class="btn" :style="style" v-if="visible">
+        <button class="btn" :style="buttonStyles" v-if="visible">
             {{ label }}
         </button>
     </div>
@@ -31,20 +31,17 @@ export default {
             if(this.borderColor) style += `border-color: ${this.borderColor};`;
 
             return style;
+
+            // color: red; border-color: red;
         },
-        color() {
-            return this.attributes.color || 'black';
-        },
-        borderColor () {
-            return this.attributes.borderColor || 'lightgrey';
-        },
-        backgroundColor () {
-            return this.attributes.backgroundColor || 'lightgrey';
-        },
-        width() {
-            return this.attributes.width || '75px';
-        }
     },
+    methods: {
+        click() {
+            // this.$ab.trackGoal('cta-clicks');
+
+            // Going to another page
+        }
+    }
 };
 </script>
 
