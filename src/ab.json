@@ -19,6 +19,7 @@
         "experiments": [
             {
                 "id": 0,
+                "name": "Live-Home",
                 "targeting": {
                     "views": {
                         "exclude": [],
@@ -122,10 +123,11 @@
         "experiments": [
             {
                 "id": 1,
+                "name": "Draft-About",
                 "targeting": {
                     "views": {
                         "exclude": [],
-                        "include": ["home"]
+                        "include": ["about"]
                     },
                     "audiences": {
                         "parameters": ["location", "platform", "viewport"],

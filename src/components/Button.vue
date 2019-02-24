@@ -1,6 +1,6 @@
 <template>
     <div class="button">
-        <button class="btn" :style="buttonStyles" v-if="visible">
+        <button class="btn" :style="style" v-if="visible">
             {{ label }}
         </button>
     </div>

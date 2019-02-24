@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <hero></hero>
+    <Hero v-for="product in products" :key="product.id"></Hero>
   </div>
 </template>
 
@@ -11,6 +11,15 @@ export default {
   name: 'home',
   components: {
     Hero
+  },
+  data() {
+    return {
+      products: [
+        { id: 0 },
+        { id: 1 },
+        { id: 2 },
+      ]
+    }
   }
 }
 </script>
