@@ -23,7 +23,7 @@
                 "targeting": {
                     "views": {
                         "exclude": [],
-                        "include": []
+                        "include": ["/bonzai"]
                     },
                     "audiences": {
                         "parameters": ["location", "platform"],
@@ -64,6 +64,7 @@
                 },
                 "variations": [
                     {
+                        "id": 0,
                         "traffic_allocation": {
                             "min": 0,
                             "max": 50
@@ -159,6 +160,7 @@
                 },
                 "variations": [
                     {
+                        "id": 1,
                         "traffic_allocation": {
                             "min": 0,
                             "max": 50
@@ -176,6 +178,42 @@
                                 "id": 2,
                                 "attributes": {
                                     "visible": false,
+                                    "color": "red",
+                                    "width": "150px",
+                                    "borderColor": "red",
+                                    "backgroundColor": "red"
+                                }
+                            },
+                            "HeroSecondaryCTA": {
+                                "id": 3,
+                                "attributes": {
+                                    "color": "red",
+                                    "width": "150px",
+                                    "borderColor": "palevioletred",
+                                    "backgroundColor": "palevioletred"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "traffic_allocation": {
+                            "min": 51,
+                            "max": 100
+                        },
+                        "components": {
+                            "Hero": {
+                                "id": 0,
+                                "attributes": {
+                                    "heroImageSrc": "https://images.unsplash.com/photo-1513147122760-ad1d5bf68cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2800&q=80",
+                                    "heroImageHeight": "500px",
+                                    "heroButtonColor": "red"
+                                }
+                            },
+                            "HeroPrimaryCTA": {
+                                "id": 2,
+                                "attributes": {
+                                    "visible": true,
                                     "color": "red",
                                     "width": "150px",
                                     "borderColor": "red",

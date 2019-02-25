@@ -16,8 +16,8 @@ export default {
     },
     computed: {
         visible() {
-            if(typeof this.attributes.visible !== 'undefined') {
-                return this.attributes.visible;
+            if(typeof this.testingAttributes.visible !== 'undefined') {
+                return this.testingAttributes.visible;
             }
 
             return true;
@@ -31,8 +31,6 @@ export default {
             if(this.borderColor) style += `border-color: ${this.borderColor};`;
 
             return style;
-
-            // color: red; border-color: red;
         },
     },
     methods: {

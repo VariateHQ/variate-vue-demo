@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import { mapAttributes } from 'ab-vue';
 import Button from '@/components/Button';
 
 export default {
@@ -23,13 +24,13 @@ export default {
 
             return style;
         },
-        backgroundImage () {
-            return this.attributes.heroImageSrc || 'http://placehold.it/1200x500';
-        },
-        height() {
-            return this.attributes.heroImageHeight || '300px';
-        }
+        ...mapAttributes({
+            background: 'red'
+        }),
     },
+    created() {
+        console.log(this.background);
+    }
 };
 </script>
 
