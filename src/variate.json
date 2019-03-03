@@ -1,0 +1,375 @@
+{
+    "live": {
+        "bucketed": {
+            "min": 0,
+            "max": 40,
+            "buckets": [
+                {
+                    "min": 0,
+                    "max": 20,
+                    "experiments": [
+                        {
+                            "id": 3,
+                            "name": "Live-Bucketed-Home",
+                            "targeting": {
+                                "views": {
+                                    "exclude": [],
+                                    "include": [
+                                        "/$"
+                                    ]
+                                },
+                                "audiences": {
+                                    "parameters": [
+                                        "location",
+                                        "platform"
+                                    ],
+                                    "include": [
+                                        {
+                                            "id": 0,
+                                            "parameters": {
+                                                "location": [
+                                                    "Canada",
+                                                    "USA"
+                                                ],
+                                                "platform": "Android"
+                                            }
+                                        },
+                                        {
+                                            "id": 1,
+                                            "parameters": {
+                                                "location": "France",
+                                                "platform": [
+                                                    "iOS",
+                                                    "Android"
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "id": 3,
+                                            "parameters": {
+                                                "range": {
+                                                    "min": 1,
+                                                    "max": 100
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "exclude": [
+                                        {
+                                            "id": 2,
+                                            "parameters": {
+                                                "viewport": "<280px"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "variations": [
+                                {
+                                    "id": 0,
+                                    "traffic_allocation": {
+                                        "min": 0,
+                                        "max": 50
+                                    },
+                                    "components": {
+                                        "Hero": {
+                                            "id": 0,
+                                            "attributes": {
+                                                "heroImageSrc": "https://images.unsplash.com/photo-1513147122760-ad1d5bf68cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2800&q=80",
+                                                "heroImageHeight": "500px",
+                                                "heroButtonColor": "red"
+                                            }
+                                        },
+                                        "HeroPrimaryCTA": {
+                                            "id": 2,
+                                            "attributes": {
+                                                "visible": false,
+                                                "color": "red",
+                                                "width": "150px",
+                                                "borderColor": "red",
+                                                "backgroundColor": "red"
+                                            }
+                                        },
+                                        "HeroSecondaryCTA": {
+                                            "id": 3,
+                                            "attributes": {
+                                                "color": "red",
+                                                "width": "150px",
+                                                "borderColor": "palevioletred",
+                                                "backgroundColor": "palevioletred"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "min": 21,
+                    "max": 40,
+                    "experiments": []
+                }
+            ]
+        },
+        "experiments": [
+            {
+                "id": 0,
+                "name": "Live-Home",
+                "targeting": {
+                    "views": {
+                        "exclude": [],
+                        "include": [
+                            "/about"
+                        ]
+                    },
+                    "audiences": {
+                        "parameters": [
+                            "location",
+                            "platform"
+                        ],
+                        "include": [
+                            {
+                                "id": 0,
+                                "parameters": {
+                                    "location": [
+                                        "Canada",
+                                        "USA"
+                                    ],
+                                    "platform": "Android"
+                                }
+                            },
+                            {
+                                "id": 1,
+                                "parameters": {
+                                    "location": "France",
+                                    "platform": [
+                                        "iOS",
+                                        "Android"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": 3,
+                                "parameters": {
+                                    "range": {
+                                        "min": 1,
+                                        "max": 100
+                                    }
+                                }
+                            }
+                        ],
+                        "exclude": [
+                            {
+                                "id": 2,
+                                "parameters": {
+                                    "viewport": "<280px"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "variations": [
+                    {
+                        "id": 0,
+                        "traffic_allocation": {
+                            "min": 0,
+                            "max": 50
+                        },
+                        "components": {
+                            "Hero": {
+                                "id": 0,
+                                "attributes": {
+                                    "heroImageSrc": "https://images.unsplash.com/photo-1513147122760-ad1d5bf68cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2800&q=80",
+                                    "heroImageHeight": "500px",
+                                    "heroButtonColor": "red"
+                                }
+                            },
+                            "HeroPrimaryCTA": {
+                                "id": 2,
+                                "attributes": {
+                                    "visible": false,
+                                    "color": "red",
+                                    "width": "150px",
+                                    "borderColor": "red",
+                                    "backgroundColor": "red"
+                                }
+                            },
+                            "HeroSecondaryCTA": {
+                                "id": 3,
+                                "attributes": {
+                                    "color": "red",
+                                    "width": "150px",
+                                    "borderColor": "palevioletred",
+                                    "backgroundColor": "palevioletred"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "draft": {
+        "bucketed": {
+            "min": 0,
+            "max": 40,
+            "buckets": [
+                {
+                    "min": 0,
+                    "max": 20,
+                    "experiments": []
+                },
+                {
+                    "min": 21,
+                    "max": 40,
+                    "experiments": []
+                }
+            ]
+        },
+        "experiments": [
+            {
+                "id": 1,
+                "name": "Draft-About",
+                "targeting": {
+                    "views": {
+                        "exclude": [],
+                        "include": [
+                            "about"
+                        ]
+                    },
+                    "audiences": {
+                        "include": [
+                            {
+                                "type": "string",
+                                "field": "platform",
+                                "operator": "=",
+                                "value": "iOS"
+                            },
+                            "OR",
+                            {
+                                "type": "number",
+                                "field": "viewport",
+                                "operator": ">",
+                                "value": 0
+                            },
+                            "OR",
+                            {
+                                "type": "number",
+                                "field": "viewport",
+                                "operator": "<",
+                                "value": 100
+                            },
+                            "OR",
+                            {
+                                "type": "boolean",
+                                "field": "authenticated",
+                                "operator": "=",
+                                "value": true
+                            },
+                            "OR",
+                            {
+                                "type": "custom",
+                                "field": "custom-field",
+                                "callback": "function(expect, value) {}"
+                            },
+                            "AND",
+                            [
+                                {
+                                    "field": "state",
+                                    "operator": "=",
+                                    "value": "Washington"
+                                },
+                                "OR",
+                                {
+                                    "field": "state",
+                                    "operator": "=",
+                                    "value": "California"
+                                }
+                            ]
+                        ],
+                        "exclude": [
+                            {
+                                "field": "state",
+                                "operator": "=",
+                                "value": "Alberta"
+                            },
+                            "OR",
+                            {
+                                "field": "city",
+                                "opp": "=",
+                                "val": "Los Angeles"
+                            }
+                        ]
+                    }
+                },
+                "variations": [
+                    {
+                        "id": 1,
+                        "traffic_allocation": {
+                            "min": 0,
+                            "max": 50
+                        },
+                        "components": {
+                            "HeroPrimaryCTA": {
+                                "id": 2,
+                                "attributes": {
+                                    "visible": false,
+                                    "color": "red",
+                                    "width": "150px",
+                                    "borderColor": "red",
+                                    "backgroundColor": "red"
+                                }
+                            },
+                            "HeroSecondaryCTA": {
+                                "id": 3,
+                                "attributes": {
+                                    "color": "red",
+                                    "width": "150px",
+                                    "borderColor": "palevioletred",
+                                    "backgroundColor": "palevioletred"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "traffic_allocation": {
+                            "min": 51,
+                            "max": 100
+                        },
+                        "components": {
+                            "Hero": {
+                                "id": 0,
+                                "attributes": {
+                                    "heroImageSrc": "https://images.unsplash.com/photo-1513147122760-ad1d5bf68cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2800&q=80",
+                                    "heroImageHeight": "500px",
+                                    "heroButtonColor": "red"
+                                }
+                            },
+                            "HeroPrimaryCTA": {
+                                "id": 2,
+                                "attributes": {
+                                    "visible": true,
+                                    "color": "red",
+                                    "width": "150px",
+                                    "borderColor": "red",
+                                    "backgroundColor": "red"
+                                }
+                            },
+                            "HeroSecondaryCTA": {
+                                "id": 3,
+                                "attributes": {
+                                    "color": "red",
+                                    "width": "150px",
+                                    "borderColor": "palevioletred",
+                                    "backgroundColor": "palevioletred"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

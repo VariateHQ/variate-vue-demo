@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import { mapAttributes } from 'ab-vue';
 import Button from '@/components/Button';
 
 export default {
@@ -24,9 +23,6 @@ export default {
 
             return style;
         },
-        ...mapAttributes({
-            background: 'red'
-        }),
     },
     created() {
         console.log(this.background);

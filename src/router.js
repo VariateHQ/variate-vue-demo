@@ -23,7 +23,13 @@ const router = new Router({
 });
 
 router.beforeEach((to, from, next) => {
-    router.app.$ab.initialize({ view: to }, next);
+    router.app.$ab.initialize({
+        view: to,
+        targeting: {
+            country: 'Canada',
+            state: 'BC'
+        }
+    }, next);
 });
 
 export default router;

@@ -1,5 +1,5 @@
 {
-  "name": "ab-vue-demo",
+  "name": "variate-vue-demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "ab-vue": "file:~/Sites/AB-Vue",
+    "variate-vue": "file:~/Sites/Variate-Vue",
     "vue": "^2.5.22",
     "vue-router": "^3.0.1"
   },
@@ -43,5 +43,15 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "author": "Valentin Prugnaud <valentin@whatdafox.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/foxted/Variate-Vue-Demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/foxted/Variate-Vue-Demo/issues"
+  },
+  "homepage": "https://github.com/foxted/Variate-Vue-Demo#readme"
 }

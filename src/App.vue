@@ -8,6 +8,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  created() {
+    console.log(this.$ab.experiments);
+  }
+}
+</script>
+
 <style>
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
