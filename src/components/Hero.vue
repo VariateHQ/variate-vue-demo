@@ -24,9 +24,6 @@ export default {
             return style;
         },
     },
-    created() {
-        console.log(this.background);
-    }
 };
 </script>
 

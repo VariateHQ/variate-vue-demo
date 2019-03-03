@@ -115,7 +115,7 @@
         "experiments": [
             {
                 "id": 0,
-                "name": "Live-Home",
+                "name": "Live-About",
                 "targeting": {
                     "views": {
                         "exclude": [],
@@ -123,50 +123,9 @@
                             "/about"
                         ]
                     },
-                    "audiences": {
-                        "parameters": [
-                            "location",
-                            "platform"
-                        ],
-                        "include": [
-                            {
-                                "id": 0,
-                                "parameters": {
-                                    "location": [
-                                        "Canada",
-                                        "USA"
-                                    ],
-                                    "platform": "Android"
-                                }
-                            },
-                            {
-                                "id": 1,
-                                "parameters": {
-                                    "location": "France",
-                                    "platform": [
-                                        "iOS",
-                                        "Android"
-                                    ]
-                                }
-                            },
-                            {
-                                "id": 3,
-                                "parameters": {
-                                    "range": {
-                                        "min": 1,
-                                        "max": 100
-                                    }
-                                }
-                            }
-                        ],
-                        "exclude": [
-                            {
-                                "id": 2,
-                                "parameters": {
-                                    "viewport": "<280px"
-                                }
-                            }
-                        ]
+                    "segments": {
+                        "include": [],
+                        "exclude": []
                     }
                 },
                 "variations": [

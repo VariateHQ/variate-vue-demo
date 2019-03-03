@@ -10,9 +10,7 @@
 
 <script>
 export default {
-  created() {
-    console.log(this.$ab.experiments);
-  }
+
 }
 </script>
 
