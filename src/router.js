@@ -25,14 +25,14 @@ const router = new Router({
 router.beforeEach((to, from, next) => {
     // Custom route logic
     // ...
-
-    router.app.$ab.initialize({
-        view: to,
-        targeting: {
-            country: 'Canada',
-            state: 'BC'
-        }
-    }, next);
+    next();
+    // router.app.$ab.initialize({
+    //     view: to,
+    //     targeting: {
+    //         country: 'Canada',
+    //         state: 'BC'
+    //     }
+    // }, next);
 });
 
 export default router;

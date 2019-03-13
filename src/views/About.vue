@@ -1,15 +1,26 @@
 <template>
-  <div class="about">
-    <h1>About</h1>
-    <Hero></Hero>
+  <div class="about container">
+    <h1>Send us a message</h1>
+    <ContactForm></ContactForm>
   </div>
 </template>
 
 <script>
-import Hero from '@/components/Hero';
+import ContactForm from '@/components/ContactForm';
 
 export default {
   name: 'about',
-  components: { Hero },
+  components: { ContactForm },
 }
 </script>
+
+<style>
+  .about {
+    text-align: left;
+  }
+
+  .about h1 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+</style>

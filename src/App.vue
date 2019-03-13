@@ -1,21 +1,14 @@
 <template>
     <div id="app">
         <div id="nav">
-            <router-link to="/" testing-id="Home">Home</router-link>
-            |
-            <router-link to="/about" testing-id="About">About</router-link>
+            <el-menu :default-active="$route.name" mode="horizontal" :router="true">
+                <el-menu-item index="home" :route="{ path: '/' }">Home</el-menu-item>
+                <el-menu-item index="about" :route="{ path: '/about' }">About</el-menu-item>
+            </el-menu>
         </div>
         <router-view/>
     </div>
 </template>
-
-<script>
-export default {
-    mounted() {
-        // console.log(this.$ab.experiments());
-    }
-};
-</script>
 
 <style>
     html, body {
@@ -26,18 +19,22 @@ export default {
         padding: 0;
         overflow-x: hidden;
     }
+
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
+        color: #265B8D;
     }
 
-    pre {
-        text-align: left;
-        background-color: #EFEFEF;
-        border: 1px solid #999999;
+    .container {
+        max-width: 960px;
+        margin: 60px auto 0;
+    }
+
+    .el-menu {
+        display: flex;
+        justify-content: center;
     }
 </style>

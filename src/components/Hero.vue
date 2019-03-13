@@ -8,10 +8,10 @@
 export default {
     computed: {
         backgroundImage() {
-            return this.testingAttributes.backgroundImage || 'https://placehold.it/1200x500';
+            return this.testingAttributes.backgroundImage || 'hero.jpg';
         },
         headline() {
-            return this.testingAttributes.headline || 'Default headline';
+            return this.testingAttributes.headline || 'Variate Vue Demo';
         },
         style() {
             let style = '';
@@ -33,10 +33,11 @@ export default {
         min-height: 400px;
         background-size: cover;
         background-position: center;
+        background-color: rgb(33, 165, 197);
     }
 
     .hero h1 {
         color: white;
-        text-shadow: 0 1px 3px rgba(0, 0, 0, .25)
+        text-shadow: 0 1px 10px rgba(42, 42, 42, 1)
     }
 </style>
