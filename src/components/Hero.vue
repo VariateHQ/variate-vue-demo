@@ -1,25 +1,22 @@
 <template>
     <div class="hero" :style="style">
-        <Button label="Primary CTA"
-                testing-id="HeroPrimaryCTA"
-        ></Button>
-        <Button label="SecondaryCTA"
-                testing-id="HeroSecondaryCTA"
-        ></Button>
+        <h1>{{ headline }}</h1>
     </div>
 </template>
 
 <script>
-import Button from '@/components/Button';
-
 export default {
-    components: { Button },
     computed: {
+        backgroundImage() {
+            return this.testingAttributes.backgroundImage || 'https://placehold.it/1200x500';
+        },
+        headline() {
+            return this.testingAttributes.headline || 'Default headline';
+        },
         style() {
             let style = '';
 
             if (this.backgroundImage) style += `background-image: url(${this.backgroundImage});`;
-            if (this.height) style += `height: ${this.height};`;
 
             return style;
         },
@@ -36,5 +33,10 @@ export default {
         min-height: 400px;
         background-size: cover;
         background-position: center;
+    }
+
+    .hero h1 {
+        color: white;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, .25)
     }
 </style>

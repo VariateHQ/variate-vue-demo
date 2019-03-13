@@ -1,7 +1,9 @@
 <template>
     <div class="button">
-        <button class="btn" :style="style" v-if="visible">
-            {{ label }}
+        <button class="btn" @click="$emit('click', {
+            hello: 'world'
+        })">
+            Primary Button
         </button>
     </div>
 </template>

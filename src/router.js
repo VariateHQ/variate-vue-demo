@@ -23,6 +23,9 @@ const router = new Router({
 });
 
 router.beforeEach((to, from, next) => {
+    // Custom route logic
+    // ...
+
     router.app.$ab.initialize({
         view: to,
         targeting: {

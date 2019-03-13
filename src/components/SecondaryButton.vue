@@ -1,7 +1,7 @@
 <template>
     <div class="button">
-        <button class="btn">
-            Primary Button
+        <button class="btn" :style="style" v-if="visible">
+            Secondary Button
         </button>
     </div>
 </template>
@@ -25,10 +25,10 @@ export default {
         style() {
             let style = '';
 
-            if(this.width) style += `width: ${this.width};`;
-            if(this.color) style += `color: ${this.color};`;
-            if(this.backgroundColor) style += `background-color: ${this.backgroundColor};`;
-            if(this.borderColor) style += `border-color: ${this.borderColor};`;
+            if(this.testingAttributes.width) style += `width: ${this.testingAttributes.width};`;
+            if(this.testingAttributes.color) style += `color: ${this.testingAttributes.color};`;
+            if(this.testingAttributes.backgroundColor) style += `background-color: ${this.testingAttributes.backgroundColor};`;
+            if(this.testingAttributes.borderColor) style += `border-color: ${this.testingAttributes.borderColor};`;
 
             return style;
         },
