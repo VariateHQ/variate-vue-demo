@@ -25,7 +25,7 @@ const router = new Router({
 router.beforeEach((to, from, next) => {
     // Custom route logic
     // ...
-    router.app.$ab.initialize({
+    router.app.$variate.initialize({
         view: to,
         targeting: {
             country: 'Canada',
