@@ -5,13 +5,15 @@
 </template>
 
 <script>
+import { mapAttributes } from '@variate/vue';
+
 export default {
     computed: {
-        backgroundImage() {
-            return this.testingAttributes.backgroundImage || 'hero.jpg';
-        },
+        // backgroundImage() {
+        //     return this.variateAttributes.backgroundImage || 'hero.jpg';
+        // },
         headline() {
-            return this.testingAttributes.headline || 'Variate Vue Demo';
+            return this.variateAttributes.headline || 'Variate Vue Demo';
         },
         style() {
             let style = '';
@@ -21,6 +23,9 @@ export default {
             return style;
         },
     },
+    mounted() {
+        console.log(mapAttributes);
+    }
 };
 </script>
 

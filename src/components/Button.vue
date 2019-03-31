@@ -16,8 +16,8 @@ export default {
     },
     computed: {
         visible() {
-            if(typeof this.testingAttributes.visible !== 'undefined') {
-                return this.testingAttributes.visible;
+            if(typeof this.variateAttributes.visible !== 'undefined') {
+                return this.variateAttributes.visible;
             }
 
             return true;
