@@ -8,7 +8,7 @@ following the instructions there: https://github.com/foxted/AB-Package
 ## Project setup
 
 ```
-$ git clone git@github.com:foxted/AB-Vue-Demo.git
+$ git clone git@github.com:foxted/variate-vue-demo.git
 $ npm install
 ```
 
