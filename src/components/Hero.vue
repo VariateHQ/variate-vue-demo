@@ -1,32 +1,22 @@
 <template>
-    <div class="hero" :style="style">
+    <div class="hero" :style="styles">
         <h1>{{ headline }}</h1>
     </div>
 </template>
 
 <script>
-import { mapAttributes } from '@variate/vue';
+import { mapAttributes, mapStyles } from '@variate/vue';
 
 export default {
     computed: {
-        // backgroundImage() {
-        //     return this.variateAttributes.backgroundImage || 'hero.jpg';
-        // },
-        headline() {
-            return this.variateAttributes.headline || 'Variate Vue Demo';
-        },
-        style() {
-            let style = '';
-
-            if (this.backgroundImage) style += `background-image: url(${this.backgroundImage});`;
-
-            return style;
-        },
+        ...mapAttributes([
+            'headline',
+            'backgroundImage',
+        ]),
+        ...mapStyles('styles', {
+            backgroundImage: `url(%s)`,
+        }),
     },
-    mounted() {
-        // const { mapAttributes } = variate;
-        console.log(mapAttributes);
-    }
 };
 </script>
 
