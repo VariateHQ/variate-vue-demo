@@ -24,6 +24,7 @@ export default {
         },
     },
     mounted() {
+        // const { mapAttributes } = variate;
         console.log(mapAttributes);
     }
 };
