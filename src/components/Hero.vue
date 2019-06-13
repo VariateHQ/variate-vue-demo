@@ -17,6 +17,14 @@ export default {
             backgroundImage: `url(%s)`,
         }),
     },
+    mounted() {
+        this.$variate.track('Purchases', 'revenue', 2000);
+        this.$variate.track({
+            name: 'Purchases',
+            type: 'revenue',
+            value: 2000,
+        });
+    }
 };
 </script>
 
