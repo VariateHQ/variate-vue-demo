@@ -22,7 +22,7 @@ export default {
         this.$variate.track({
             name: 'Purchases',
             type: 'revenue',
-            value: 2000,
+            value: 4000,
         });
     }
 };
