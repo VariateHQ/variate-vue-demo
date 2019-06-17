@@ -11,6 +11,9 @@ Vue.use(ElementUI);
 
 Vue.use(Variate, {
     debug: true,
+    // tracking: false,
+    // reporter: () => {}
+    // pageview: false
     config: config,
 });
 
