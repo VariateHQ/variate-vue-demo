@@ -1,14 +1,9 @@
-# Vue Demo
+# Variate Vue Demo
 
-## Requirements
-
-The AB Testing package is not published yet. To test it locally, make sure you installed it on your machine first by 
-following the instructions there: https://github.com/foxted/AB-Package
-
-## Project setup
+## Installation
 
 ```
-$ git clone git@github.com:foxted/variate-vue-demo.git
+$ git clone git@github.com:variateapp/variate-vue-demo.git
 $ npm install
 ```
 
@@ -22,16 +17,7 @@ $ npm run serve
 $ npm run build
 ```
 
-### Run your tests
-```
-$ npm run test
-```
-
 ### Lints and fixes files
 ```
 $ npm run lint
 ```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).

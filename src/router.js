@@ -29,7 +29,7 @@ router.beforeEach((to, from, next) => {
         view: to,
         targeting: {
             country: 'Canada',
-            state: 'BC'
+            state: 'BC',
         }
     }, next);
 });

@@ -1,7 +1,6 @@
 {
   "name": "@variate/vue-demo",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
   "scripts": {
     "dev": "npm run serve",
     "serve": "vue-cli-service serve",
@@ -10,7 +9,7 @@
   },
   "dependencies": {
     "element-ui": "^2.6.1",
-    "@variate/vue": "file:~/Sites/Variate-Vue",
+    "@variate/vue": "^1.0",
     "vue": "^2.5.22",
     "vue-router": "^3.0.1"
   },
@@ -47,13 +46,13 @@
     "not ie <= 8"
   ],
   "author": "Valentin Prugnaud <valentin@whatdafox.com>",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/foxted/Variate-Vue-Demo.git"
+    "url": "git+ssh://git@github.com/variateapp/variate-vue-demo.git"
   },
   "bugs": {
-    "url": "https://github.com/foxted/Variate-Vue-Demo/issues"
+    "url": "https://github.com/variateapp/variate-vue-demo/issues"
   },
-  "homepage": "https://github.com/foxted/Variate-Vue-Demo#readme"
+  "homepage": "https://github.com/variateapp/variate-vue-demo#readme"
 }

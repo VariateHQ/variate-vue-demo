@@ -12,9 +12,25 @@
                         ],
                         "exclude": []
                     },
-                    "segments": {
-                        "exclude": [],
-                        "include": []
+                    "segment": {
+                        "and": [
+                            {
+                                "==": [
+                                    {
+                                        "var": "country"
+                                    },
+                                    "Canada"
+                                ]
+                            },
+                            {
+                                "==": [
+                                    {
+                                        "var": "state"
+                                    },
+                                    "BC"
+                                ]
+                            }
+                        ]
                     }
                 },
                 "variations": [
@@ -61,9 +77,25 @@
                         ],
                         "exclude": []
                     },
-                    "segments": {
-                        "exclude": [],
-                        "include": []
+                    "segment": {
+                        "and": [
+                            {
+                                "==": [
+                                    {
+                                        "var": "country"
+                                    },
+                                    "France"
+                                ]
+                            },
+                            {
+                                "==": [
+                                    {
+                                        "var": "state"
+                                    },
+                                    "BC"
+                                ]
+                            }
+                        ]
                     }
                 },
                 "variations": [

@@ -22,7 +22,9 @@ export default {
         this.$variate.track({
             name: 'Purchases',
             type: 'revenue',
-            value: 4000,
+            value: {
+                bonzai: 'Nah'
+            },
         });
     }
 };
