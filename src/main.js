@@ -11,10 +11,11 @@ Vue.use(ElementUI);
 
 Vue.use(Variate, {
     debug: true,
-    tracking: false,
-    // reporter: (event) => {
-    //     console.log('Google Analytics: ' + event.name);
-    // },
+    tracking: true,
+    reporter: (event) => {
+        console.log('Google Analytics: ' + event.name);
+        return true;
+    },
     // pageview: false,
     config,
 });
