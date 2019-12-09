@@ -38,12 +38,13 @@ export default {
     data() {
         return {
             form: {
-                source: null,
+                name: '',
+                source: [],
                 message: '',
                 newsletter: false
             }
         };
-    }
+    },
 };
 </script>
 
