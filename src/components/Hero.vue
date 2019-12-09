@@ -5,15 +5,15 @@
 </template>
 
 <script>
-import { mapAttributes, mapStyles } from '@variate/vue';
+import { mapVariables, mapStyles } from '@variate/vue';
 
 export default {
     computed: {
-        ...mapAttributes([
-            'headline',
-            'backgroundImage',
-        ]),
-        ...mapStyles('styles', {
+        ...mapVariables({
+            backgroundImage: '',
+            headline: 'Hello World',
+        }),
+        ...mapStyles({
             backgroundImage: `url(%s)`,
         }),
     },
