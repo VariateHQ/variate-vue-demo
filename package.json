@@ -1,11 +1,12 @@
 {
   "name": "@variate/vue-demo",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "scripts": {
     "dev": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "release": "standard-version -a"
   },
   "dependencies": {
     "@variate/vue": "^2.0",
