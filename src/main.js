@@ -11,13 +11,13 @@ Vue.use(ElementUI);
 
 Vue.use(Variate, {
     debug: true,
-    tracking: true,
-    reporter: (event) => {
-        console.log('Google Analytics: ' + event.name);
-        return true;
+    pageview: false,
+    tracking: {
+        enabled: true,
+        default: false,
+        reporter: async() => true
     },
-    // pageview: false,
-    config,
+    config
 });
 
 Vue.config.productionTip = false;
